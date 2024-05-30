@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container" id="home">
+        <div class="contents">
+            <div class="header" >
+                <header>Korosho  E-commerce Platform</header>
+                 <p id="welcome-user"></p>
+            </div>
+           
+            <div class="heading">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search products">
+                    <button type="submit" id="searchForm">Search</button>
+                </div>
+                
+                <div class="heading2">
+                    <a href="#home">Home</a>
+                    <a href="#products">Products</a>
+                    <a href="#aboutus">About Us</a>
+                    <a href="#contactus">Contact Us</a>
+                    <a href="#" id="logout">LogOut</a>
+                </div>
+            </div>
+            <div class="cart-icon" id="cart-icon">
+                <div class="shopping">
+                    <img src="/images//cart.jpeg" alt="Cart" width="45px">
+                    <span class="quantity" onclick="displayCart()">0</span>
+                </div>
+            </div>
+    
+        <div class="list"></div>
+    </div>
+
+    <div class="card">
+        <h1>Cart</h1>
+        <ul class="listCard"></ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <input type="text" class="discount" placeholder="Enter discount %">
+            <button class="applyDiscount">Apply Discount</button>
+            <div class="closeShopping">Exit</div>
+            <button class="checkout">Order Now</button>
+        </div>
+    </div>
+            
+         
+            <div id="products">
+                
+            </div>
+            
+            <div id="aboutus">
+
+                <h2>About Us</h2>
+                <p> 
+                    Korosho is an innovative e-commerce platform designed to cater
+                     to a wide array of customer needs, offering a seamless shopping experience. The platform is dedicated to providing high-quality products across various categories, ensuring that customers have access to 
+                    a diverse range of items, from electronics and gadgets to everyday essentials and gourmet foods.</p>
+            </div>
+
+            <div id="contactus">
+                <h2>Contact Us</h2>
+                
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                        <textarea placeholder="Your Message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+            
+
+            
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

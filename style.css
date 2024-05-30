@@ -1,0 +1,377 @@
+.container {
+    background-color: rgb(153, 160, 167);
+    margin: 5%;
+    padding-bottom: 20px;
+}
+
+.contents {
+    padding: 3%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(189, 23, 100);
+    font-size: 20px;
+    padding: 10px;
+    height: 60px;
+}
+
+header {
+    font-size: 30px;
+    color: white;
+    margin: 0;
+}
+
+header p {
+    margin-left: 34px;
+}
+
+p {
+    font-size: 20px;
+    margin-left: 4%;
+    color: white;
+}
+
+.search-bar input {
+    border-radius: 20px;
+    border: none;
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.search-bar button {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 34px;
+    border: none;
+    background-color: rgb(189, 23, 100);
+    color: white;
+}
+
+.search-bar button:hover {
+    background-color: #ccc;
+}
+
+.heading {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading2 {
+    gap: 4px;
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.heading2 a {
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.heading2 a:hover {
+    color: green;
+}
+
+.home {
+    margin-top: 20px;
+}
+
+#products {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.product img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product p {
+    color: rgb(238, 154, 44);
+    font-size: 16px;
+    margin: 10px 0;
+    flex-grow: 1;
+    max-height: 100px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; 
+    -webkit-box-orient: vertical;
+}
+
+.product button {
+    background-color: green;
+    height: 30px;
+    border-radius: 5px;
+    width: 100px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product button:hover {
+    background-color: rgb(146, 54, 123);
+}
+
+.home {
+    height: 200px;
+}
+
+.home p:hover {
+    background-color: rgb(187, 153, 153);
+    transform: scale(1.05);
+}
+
+#aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#aboutus h2 {
+    color: rgb(189, 23, 100);
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#aboutus p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+#contactus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#contactus h2 {
+    color: rgb(189, 23, 100);
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.contact-form h3 {
+    color: rgb(150, 50, 80);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.cart-icon {
+    cursor: pointer;
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 5px 10px;
+    background-color: white;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.cart-icon .quantity {
+    background-color: green;
+    border-radius: 50%;
+    padding: 2px 6px;
+    margin-left: 5px;
+    font-size: 12px;
+    color: white;
+}
+
+.cart-icon:hover {
+    background-color: #0056b3;
+}
+
+.card {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.card.active {
+    right: 0;
+}
+
+.card .closeShopping {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+}
+
+.card .listCard {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.card .listCard li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.card .checkOut {
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .total {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card .discount {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.card .applyDiscount {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card .applyDiscount:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+    #products {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .product {
+        padding: 15px;
+    }
+
+    .product p {
+        font-size: 14px;
+    }
+    
+    .product button {
+        height: 28px;
+    }
+
+    .product button:hover {
+        background-color: #0eb924;
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #products {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .product {
+        padding: 10px;
+    }
+
+    .product p {
+        font-size: 12px;
+    }
+
+    .product button {
+        width: 70px;
+        height: 25px;
+    }
+}
